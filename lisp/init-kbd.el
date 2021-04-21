@@ -43,7 +43,7 @@
 (general-create-definer leader-def
   :states nil
   :keymaps 'override
-  :prefix "M-m"
+  :prefix "s-m"
   :prefix-command 'prefix-command
   :prefix-map 'prefix-map)
 
@@ -89,8 +89,8 @@ If any hook returns non-nil, all hooks after it are ignored.")
 (when (and env-sys-mac-p env-graphic-p)
   (defvar mac-option-modifier)
   (defvar mac-command-modifier)
-  (setq mac-option-modifier nil
-        mac-command-modifier 'meta))
+  (setq mac-option-modifier 'meta
+        mac-command-modifier 'super))
 
 (provide 'init-kbd)
 ;;; init-kbd.el ends here

@@ -47,7 +47,7 @@ real notes. Maybe it also means experimental features.")
 
 (defvar vulpea-directory
   (expand-file-name
-   (if vulpea-test-mode "vulpea-test/" "Dropbox/vulpea/")
+   "Library/Mobile Documents/iCloud~com~appsonthemove~beorg/Documents/org/"
    path-home-dir)
   "Directory containing notes.")
 

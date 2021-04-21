@@ -236,7 +236,7 @@
   :defer t
   :config
   (setq-default
-   org-attach-id-dir (expand-file-name ".data/" vulpea-directory)
+   org-attach-id-dir (expand-file-name "OneDrive - j.mbox.nagoya-u.ac.jp/OrgAttach/" path-home-dir)
    org-attach-auto-tag nil
    org-attach-file-list-property nil
    org-attach-store-link-p 'attached))
@@ -249,7 +249,7 @@
   :init
   (setq-default
    org-archive-location
-   (concat org-directory ".archive/%s_archive" "::" "datetree/*")
+   (concat org-directory "archive.org" "::" "datetree/*")
    org-archive-save-context-info
    '(time file ltags itags todo category olpath)))
 
